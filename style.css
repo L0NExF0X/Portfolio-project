@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #181a1b;
+  --secondary-color: #e8e6e3;
+}
+
+body {
+  padding: 100px 0px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 48px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.8;
+  font-size: 20px;
+}
