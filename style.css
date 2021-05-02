@@ -1,21 +1,55 @@
 :root {
-  --primary-color: #181a1b;
-  --secondary-color: #e8e6e3;
+  --heading-font: "Roboto Slab", serif;
+  --secondary-font: "Montserrat", sans-serif;
+  --accent-color: #f8990b;
 }
 
 body {
-  padding: 100px 0px;
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  background: #070808;
+  color: #e8e6e3;
 }
 
 h1 {
-  font-family: "Roboto Slab", serif;
-  font-size: 48px;
+  font-family: var(--heading-font);
+  font-size: 96px;
 }
 
-h3 {
-  font-family: "Montserrat", sans-serif;
+h2,
+p,
+.primary-button {
+  font-family: var(--secondary-font);
+}
+
+h2 {
   opacity: 0.8;
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.homepage {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  padding: 160px 20px;
+}
+
+.homepage h1 {
+  color: #c74ded;
+}
+
+.homepage h2 {
+  color: #000;
+}
+
+.primary-button {
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 4px;
+  color: #000;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.primary-button:hover {
+  background: transparent;
+  color: #070808;
 }
