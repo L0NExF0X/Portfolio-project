@@ -36,6 +36,7 @@ h3 {
 p {
   font-size: 18px;
   line-height: 30px;
+  opacity: 0.8;
 }
 
 .homepage {
@@ -118,7 +119,7 @@ p {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 477px) {
   h1 {
     font-size: 48px;
   }
