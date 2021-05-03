@@ -10,8 +10,12 @@ body {
 }
 
 h1 {
-  font-family: var(--heading-font);
   font-size: 96px;
+}
+
+h1,
+h3 {
+  font-family: var(--heading-font);
 }
 
 h2,
@@ -23,6 +27,15 @@ p,
 h2 {
   opacity: 0.8;
   font-size: 24px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .homepage {
@@ -40,10 +53,10 @@ h2 {
 
 .primary-button {
   background: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 15px;
   text-decoration: none;
   transition: all 200ms ease-in-out;
@@ -52,4 +65,73 @@ h2 {
 .primary-button:hover {
   background: transparent;
   color: #070808;
+}
+
+.description {
+  padding: 0 30px;
+}
+
+.secondary-button {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  color: var(--accent-color);
+  font-size: 16px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.secondary-button:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .homepage {
+    padding: 120px 10px;
+  }
+  .description {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 42px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .app-link {
+    display: block;
+    text-align: center;
+    margin: 0 170px;
+  }
+  .homepage {
+    padding: 100px 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .app-link {
+    margin: 0 20px;
+  }
 }
