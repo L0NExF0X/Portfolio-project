@@ -27,6 +27,7 @@ p,
 h2 {
   opacity: 0.8;
   font-size: 24px;
+  font-weight: 600;
 }
 
 h3 {
@@ -72,6 +73,18 @@ p {
   padding: 0 30px;
 }
 
+.about-description {
+  padding: 160px 20px;
+}
+
+.about-description h1 {
+  font-size: 52px;
+}
+
+.about-description h2 {
+  font-size: 20px;
+}
+
 .secondary-button {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
@@ -92,6 +105,9 @@ p {
   }
   .description {
     padding: 0px;
+  }
+  .about-description {
+    text-align: center;
   }
 }
 
