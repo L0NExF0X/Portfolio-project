@@ -107,6 +107,7 @@ p {
     padding: 0px;
   }
   .about-description {
+    padding: 120px 10px;
     text-align: center;
   }
 }
