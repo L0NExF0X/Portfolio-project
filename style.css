@@ -20,7 +20,8 @@ h3 {
 
 h2,
 p,
-.primary-button {
+.primary-button,
+.secondary-button {
   font-family: var(--secondary-font);
 }
 
@@ -41,12 +42,12 @@ p {
 }
 
 .homepage {
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to top, #37ecba 0%, #11021a 100%);
   padding: 160px 20px;
 }
 
 .homepage h1 {
-  color: #c74ded;
+  color: #f70e06;
 }
 
 .homepage h2 {
@@ -65,24 +66,44 @@ p {
 }
 
 .primary-button:hover {
-  background: transparent;
-  color: #070808;
+  color: #fff;
 }
 
 .description {
   padding: 0 30px;
 }
 
-.about-description {
+.content {
   padding: 160px 20px;
 }
 
-.about-description h1 {
+.content h1 {
   font-size: 52px;
 }
 
-.about-description h2 {
+.content h2 {
   font-size: 20px;
+}
+
+.coder {
+  max-width: 80%;
+}
+
+.project-info h3 {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+}
+
+.project-info p {
+  font-size: 16px;
+}
+
+.mango-image {
+  max-width: 90%;
+}
+
+.weather-image {
+  max-width: 70%;
 }
 
 .secondary-button {
@@ -106,7 +127,7 @@ p {
   .description {
     padding: 0px;
   }
-  .about-description {
+  .content {
     padding: 120px 10px;
     text-align: center;
   }
@@ -133,6 +154,9 @@ p {
   }
   .homepage {
     padding: 100px 5px;
+  }
+  .coder {
+    max-width: 60%;
   }
 }
 
