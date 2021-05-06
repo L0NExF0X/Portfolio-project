@@ -100,10 +100,12 @@ p {
 
 .mango-image {
   max-width: 90%;
+  margin: 0 auto;
 }
 
 .weather-image {
   max-width: 70%;
+  margin: 0 auto;
 }
 
 .secondary-button {
