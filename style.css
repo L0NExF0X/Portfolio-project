@@ -116,18 +116,19 @@ p {
   transition: all 200ms ease-in-out;
 }
 
-.secondary-button:hover {
-  color: #fff;
-}
-
 .link {
   color: var(--accent-color);
   font-size: 18px;
   text-decoration: none;
 }
 
-.link:hover {
+.link:hover,
+.secondary-button:hover {
   color: var(--bs-yellow);
+}
+
+.navigation {
+  background: #111;
 }
 
 @media (max-width: 768px) {
