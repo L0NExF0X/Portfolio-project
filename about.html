@@ -29,7 +29,9 @@
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark navigation">
       <div class="container-fluid">
-        <a class="navbar-brand" title="Homepage" href="/">Katie Pérez</a>
+        <a class="navbar-brand name-brand" title="Homepage" href="/"
+          >Katie Pérez</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -44,27 +46,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" title="Homepage: Katie Pérez" href="/"
-                >Home</a
-              >
+              <a class="nav-link non-active" title="Homepage" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link active-link"
                 aria-current="page"
-                title="About Katie Pérez"
+                title="About Katie"
                 href="/about.html"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" title="Katie's projects" href="/projects.html"
+              <a
+                class="nav-link non-active"
+                title="Katie's projects"
+                href="/projects.html"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link non-active"
                 title="Contact Katie Pérez"
                 href="/contact.html"
                 >Contact</a
@@ -86,21 +89,110 @@
           </p>
           <div class="mb-5">
             <a
-              href="#"
+              href="/projects.html"
               class="primary-button app-link"
               title="Check out Katie's projects"
               >View Projects</a
             >
           </div>
         </div>
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center p-2">
           <img
             src="/images/katie.JPG"
             alt="Katie Pérez"
-            class="rounded p-2 coder"
+            class="img-fluid rounded coder"
           />
         </div>
       </div>
+      <br />
+      <hr />
+      <div class="text-center mt-5">
+        <h3>Certificates</h3>
+        <div class="row mt-4">
+          <div class="col-md-6 mb-3 p-3">
+            <img
+              src="/images/she-codes-intro.png"
+              alt="SheCodesBasics"
+              class="img-fluid rounded"
+            />
+            <div class="mt-5">
+              <a
+                href="https://www.shecodes.io/certificates/755fe1fe748ce2c6267d28774a246c81"
+                target="_blank"
+                title="https://www.shecodes.io"
+                class="secondary-button app-link mb-5"
+                >See Credentials</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 mb-3 p-3">
+            <img
+              src="/images/she-codes-plus.png"
+              alt="SheCodesPlus"
+              class="img-fluid rounded"
+            />
+            <div class="mt-5">
+              <a
+                href="https://www.shecodes.io/certificates/55e3693b3a04ed314f4e594d18113241"
+                target="_blank"
+                title="https://www.shecodes.io"
+                class="secondary-button app-link mb-4"
+                >See Credentials</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer>
+      <div
+        class="inquiry-box d-flex justify-content-between align-items-center mb-5 d-none d-sm-flex"
+      >
+        <div>
+          <h3>Work Inquiry</h3>
+          <p>Let's work together!</p>
+        </div>
+        <div>
+          <a
+            href="/contact.html"
+            class="primary-button"
+            title="Contact Katie Pérez"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <a
+          href="mailto:perezkatie94@gmail.com"
+          class="email-link"
+          title="perezkatie94@gmail.com"
+          >perezkatie94@gmail.com</a
+        >
+        <div class="social-links mt-4">
+          <a
+            href="https://www.linkedin.com/in/katie-p%C3%A9rez-0a8655209/"
+            target="_blank"
+            title="LinkedIn Profile"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/L0NExF0X"
+            target="_blank"
+            title="GitHub Profile"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <div class="code-info">
+          <p class="mt-4 text-muted">
+            This project portfolio was coded by Katie and is open-sourced on
+            <a
+              href="https://github.com/L0NExF0X/Portfolio-project"
+              target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

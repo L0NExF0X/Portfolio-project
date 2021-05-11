@@ -21,17 +21,13 @@ h1 {
 }
 
 h2 {
-  opacity: 0.8;
   font-size: 24px;
   font-weight: 600;
+  opacity: 0.8;
 }
 
 h3 {
   font-size: 48px;
-}
-
-h4 {
-  font-size: 36px;
 }
 
 p {
@@ -42,23 +38,24 @@ p {
 
 footer {
   padding: 28px;
-  margin: 100px 0 30px;
+  margin: 80px 0 20px;
 }
 
 .homepage {
   background-image: linear-gradient(to bottom, #750dbb 0%, #090011 100%);
-  padding: 160px 20px;
+  padding: 140px 20px;
 }
 
-.name-brand,
+.name-brand:hover,
 .homepage h1 {
-  color: #f70e06;
+  color: #f70e06 !important;
 }
 
 .primary-button,
 .secondary-button,
 .email-link,
-.social-links a {
+.social-links a,
+.code-info a {
   text-decoration: none;
 }
 
@@ -81,7 +78,8 @@ footer {
 }
 
 .secondary-button,
-.hamburger:hover {
+.hamburger:hover,
+.code-info a {
   color: var(--accent-color);
 }
 
@@ -90,30 +88,34 @@ footer {
   color: #070808;
 }
 
+.non-active:hover,
 .email-link,
-.social-links a {
-  color: #00ffea;
-}
-.email-link {
-  font-size: 18px;
+.social-links a,
+.code-info a:hover {
+  color: #00ffea !important;
 }
 
+.active-link,
 .email-link:hover,
 .social-links a:hover {
-  color: #ae00ff;
+  color: #ae00ff !important;
+}
+
+.email-link {
+  font-size: 18px;
 }
 
 .social-links a {
   background: #252525;
   border-radius: 50%;
-  font-size: 36px;
+  font-size: 24px;
   margin: 0 20px;
   padding: 10px 14px;
 }
 
 .hamburger {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   transition: all 200ms ease-in-out;
 }
 
@@ -127,8 +129,17 @@ footer {
   padding: 50px;
 }
 
+.inquiry-box h3 {
+  font-size: 36px;
+}
+
+.code-info p {
+  font-size: 14px;
+  opacity: 1;
+}
+
 .content {
-  padding: 160px 20px;
+  padding: 160px 20px 10px;
 }
 
 .content h1 {
@@ -139,9 +150,10 @@ footer {
   font-size: 20px;
 }
 
-.info h3 {
-  font-family: var(--secondary-font);
+.info h2 {
   font-size: 24px;
+  font-weight: 500;
+  opacity: 1;
 }
 
 .info p {
@@ -167,20 +179,26 @@ footer {
   font-family: var(--bs-font-sans-serif);
 }
 
+@media (min-width: 992px) {
+  .coder {
+    max-width: 80%;
+  }
+}
+
 @media (max-width: 768px) {
   .homepage {
     padding: 120px 10px;
   }
   .description {
-    padding: 0px;
+    text-align: center;
   }
   .social-links a {
-    font-size: 36px;
+    font-size: 22px;
     margin: 0 10px;
     padding: 6px 10px;
   }
   .content {
-    padding: 120px 15px;
+    padding: 120px 15px 5px;
     text-align: center;
   }
 }
@@ -197,7 +215,14 @@ footer {
     text-align: center;
   }
   p {
+    font-size: 16px;
     text-align: center;
+  }
+  .homepage {
+    padding: 80px 5px;
+  }
+  .description {
+    padding: 0px;
   }
   .inquiry-box {
     padding: 36px;
@@ -205,8 +230,11 @@ footer {
     margin: 0 auto;
   }
   .social-links a {
-    font-size: 30px;
+    font-size: 20px;
     padding: 4px 8px;
+  }
+  .content {
+    padding: 100px 15px 0px;
   }
   .content h1 {
     font-size: 40px;
@@ -221,9 +249,6 @@ footer {
     display: block;
     text-align: center;
     margin: 0 50px;
-  }
-  .homepage {
-    padding: 100px 5px;
   }
   .coder {
     max-width: 60%;
@@ -246,9 +271,10 @@ footer {
   footer .email-link {
     font-size: 16px;
   }
-  .social-links a {
-    font-size: 24px;
-    margin: 0 5px;
-    padding: 3px 7px;
+  .description {
+    padding: 0 5px;
+  }
+  .app-link {
+    margin: 0 50px;
   }
 }
