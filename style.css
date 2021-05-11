@@ -201,6 +201,9 @@ footer {
     padding: 120px 15px 5px;
     text-align: center;
   }
+  .contact-footer {
+    margin: 40px 0 15px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -252,6 +255,10 @@ footer {
   }
   .coder {
     max-width: 60%;
+  }
+  .contact-section {
+    display: block;
+    margin: 0 auto;
   }
 }
 
