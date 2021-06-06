@@ -179,12 +179,6 @@ footer {
   font-family: var(--bs-font-sans-serif);
 }
 
-@media (min-width: 992px) {
-  .coder {
-    max-width: 80%;
-  }
-}
-
 @media (max-width: 768px) {
   .homepage {
     padding: 120px 10px;
