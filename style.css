@@ -46,9 +46,18 @@ footer {
   padding: 140px 20px;
 }
 
+.name-brand,
+.non-active {
+  transition: all 150ms ease-in-out;
+}
+
 .name-brand:hover,
 .homepage h1 {
   color: #f70e06 !important;
+}
+
+.quick-nav-links a {
+  margin: 0 30px 0;
 }
 
 .primary-button,
@@ -65,7 +74,7 @@ footer {
   border-radius: 4px;
   font-size: 16px;
   padding: 10px 15px;
-  transition: all 300ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .primary-button {
@@ -160,6 +169,16 @@ footer {
   font-size: 16px;
 }
 
+.mango-picture {
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+.weather-picture {
+  max-width: 55%;
+  margin: 0 auto;
+}
+
 .mango-image {
   max-width: 90%;
   margin: 0 auto;
@@ -170,8 +189,18 @@ footer {
   margin: 0 auto;
 }
 
+.react-weather-image {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.dictionary-image {
+  max-width: 65%;
+  margin: 0 auto;
+}
+
 .coder {
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .navigation {
@@ -218,6 +247,9 @@ footer {
   .homepage {
     padding: 80px 5px;
   }
+  .quick-nav-links a {
+    margin: 0 20px 0;
+  }
   .description {
     padding: 0px;
   }
@@ -241,11 +273,6 @@ footer {
   }
   .content p {
     font-size: 16px;
-  }
-  .app-link {
-    display: block;
-    text-align: center;
-    margin: 0 50px;
   }
   .coder {
     max-width: 60%;
@@ -272,10 +299,10 @@ footer {
   footer .email-link {
     font-size: 16px;
   }
+  .quick-nav-links a {
+    margin: 0 15px 0;
+  }
   .description {
     padding: 0 5px;
-  }
-  .app-link {
-    margin: 0 50px;
   }
 }
